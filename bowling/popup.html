@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lumitel Bot</title>
+    <style>
+        body {
+            width: 300px;
+            font-family: sans-serif;
+            padding: 10px;
+            background: #222;
+            color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            color: #00d2ff;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        #startBtn {
+            background: #28a745;
+            color: white;
+        }
+
+        #stopBtn {
+            background: #dc3545;
+            color: white;
+        }
+
+        #status {
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #logs {
+            width: 100%;
+            height: 150px;
+            background: #333;
+            border: 1px solid #444;
+            color: #0f0;
+            font-family: monospace;
+            font-size: 11px;
+            overflow-y: scroll;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .status-idle {
+            color: #aaa;
+        }
+
+        .status-running {
+            color: #0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Lumitel Bot</h2>
+    <div id="status" class="status-idle">Status: IDLE</div>
+
+
+
+    <div class="controls">
+        <button id="startBtn">START</button>
+        <button id="stopBtn">STOP</button>
+    </div>
+    <textarea id="logs" readonly></textarea>
+    <script src="popup.js"></script>
+</body>
+
+</html>
