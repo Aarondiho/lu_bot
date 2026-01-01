@@ -1,1 +1,2 @@
-# lu_bot
+# install by running 
+# npm install playwright
